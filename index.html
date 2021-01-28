@@ -1,0 +1,46 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Covid19</title>
+</head>
+<body>
+    <div id="form">
+    <h1>Estadisticas Covid19</h1>
+    
+        
+        <label for="">Fecha</label> <input id="inputFecha" type="date">
+        <label for="Pais">Pais: </label> 
+            <select name="" id="selectPais">
+                <option value="Argentina">Argentina</option>
+                <option value="Bolivia">Bolivia</option>
+                <option value="Brazil">Brazil</option>
+                <option value="Chile">Chile</option>
+                <option value="Colombia">Colombia</option>
+                <option value="Ecuador">Ecuador</option>
+                <option value="Paraguay">Paraguay</option>
+                <option value="Peru">Peru</option>
+                <option value="Uruguay">Uruguay</option>
+                <option value="Venezuela">Venezuela</option>
+                
+            </select>
+            <br>
+            <button id="cargarEstadistica">cargar estadistica</button>
+            <br>
+                <ul></ul>
+                    <li>Casos Totales: <span class="num" id="today_confirmed"></span> </li>       
+                    <li>Fallecidos Totales: <span class="num" id="today_deaths"></span> </li>
+                    <li>Casos confirmados de la fecha: <span class="num" id="today_new_confirmed"></span></li> 
+                    <li>Muertes confirmadas de la fecha: <span class="num" id="today_new_deaths"></span> </li> 
+                    <li>Recuperados hoy: <span class="num" id="today_new_recovered"></span></li> 
+                    <li>Casos abiertos Total: <span class="num" id="today_open_cases"></span></li> 
+                    <li>Recuperados total: <span class="num" id="today_recovered"></span></li> 
+                
+                </ul>
+        </div>
+
+    
+</body>
+<script src="App.js"></script>
+</html>
