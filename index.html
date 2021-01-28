@@ -5,14 +5,20 @@
     <link rel="stylesheet" href="main.css">
     <title>Covid19</title>
 </head>
+<div id="container">
+<header>
+    <h1>Estadisticas Covid19</h1>
+
+
+</header>
 <body>
     <div id="form">
-    <h1>Estadisticas Covid19</h1>
     
         
         <label for="">Fecha</label> <input id="inputFecha" type="date">
         <label for="Pais">Pais: </label> 
             <select name="" id="selectPais">
+                <option value="seleccion">Seleccione una opcion: </option>
                 <option value="Argentina">Argentina</option>
                 <option value="Bolivia">Bolivia</option>
                 <option value="Brazil">Brazil</option>
@@ -26,7 +32,7 @@
                 
             </select>
             <br>
-            <button id="cargarEstadistica">cargar estadistica</button>
+            <button id="cargarEstadistica">Cargar estadistica</button>
             <br>
                 <ul></ul>
                     <li>Casos Totales: <span class="num" id="today_confirmed"></span> </li>       
@@ -42,5 +48,10 @@
 
     
 </body>
+<footer>
+
+
+</footer>
+</div>
 <script src="App.js"></script>
 </html>

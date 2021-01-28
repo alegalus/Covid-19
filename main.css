@@ -1,11 +1,74 @@
+#container{
+    display: grid;
+    height: 100vh;
+    grid-template-rows: auto 1fr auto;
+    margin: auto;
+}
+
+header{
+
+    border:1px solid red;
+    height: 5em;
+}
+
 #form{
     display: grid; 
     width: 20%;
+    margin: auto;
+    
 
+
+}
+
+label{
+    color:rgb(3, 125, 173);
+    font-size: 1.1em;
+
+}
+input {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid black;
+    margin-bottom: 0.5em;
+    border-radius: 5px;
+    padding: 0.3em;
+
+}
+
+select{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid black;
+    margin-bottom: 0.5em;
+    border-radius: 5px;
+    padding: 0.3em;
+    background-color: rgb(238, 238, 238);
+
+
+}
+
+#cargarEstadistica{
+
+    padding: 0.5em;
+    border-radius: 5px;
+    border: 1px solid grey;
 }
 .num{
 
 font-weight: 900;
 
 
+}
+
+li{
+    list-style:none ;
+    padding: 0.2em;
+
+}
+footer{
+
+    border:1px solid red;
+    height: 5em;
 }
