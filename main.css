@@ -167,6 +167,7 @@ footer{
     justify-content: center;
     margin-left: 0.3em; 
     margin-bottom: 0.5em;
+    
 }
 
 .social a:hover {transform: scale(1.1,1.1); color: rgb(34, 87, 122);}
