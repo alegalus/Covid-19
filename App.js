@@ -22,14 +22,15 @@ async function clickBoton(){
     console.log(json)
     let estadisticas = json.dates[fecha].countries[pais]
     console.log(estadisticas)
-    document.getElementById("today_confirmed").innerHTML = estadisticas.today_confirmed
-    document.getElementById("today_deaths").innerHTML = estadisticas.today_deaths
-    document.getElementById("today_new_confirmed").innerHTML = estadisticas.today_new_confirmed
-    document.getElementById("today_new_deaths").innerHTML = estadisticas.today_new_deaths
-    document.getElementById("today_new_recovered").innerHTML = estadisticas.today_new_recovered
-    document.getElementById("today_open_cases").innerHTML = estadisticas.today_open_cases
-    document.getElementById("today_recovered").innerHTML = estadisticas.today_recovered
+    document.getElementById("today_confirmed").innerHTML = estadisticas.today_confirmed.toLocaleString()
+    document.getElementById("today_deaths").innerHTML = estadisticas.today_deaths.toLocaleString()
+    document.getElementById("today_new_confirmed").innerHTML = estadisticas.today_new_confirmed.toLocaleString()
+    document.getElementById("today_new_deaths").innerHTML = estadisticas.today_new_deaths.toLocaleString()
+    document.getElementById("today_new_recovered").innerHTML = estadisticas.today_new_recovered.toLocaleString()
+    document.getElementById("today_open_cases").innerHTML = estadisticas.today_open_cases.toLocaleString()
+    document.getElementById("today_recovered").innerHTML = estadisticas.today_recovered.toLocaleString()
     
+    
+    
+
 }
-
-
