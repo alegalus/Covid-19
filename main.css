@@ -174,7 +174,7 @@ footer{
 
 /*--Media Query--*/
 
-@media screen and (max-width:1024px){
+@media screen and (min-width:1024px)and (max-width: 1200px){
     header{
         height: 7em;
         font-size: 1.6em;
@@ -186,8 +186,7 @@ footer{
         width: 60%;
         padding: 2em 3em;
        
-        
-        
+
                 
     } 
     label{
@@ -243,9 +242,7 @@ header{
 
     width: 60%;
     padding: 2em 3em;
-   
-    
-    
+       
             
 } 
 label{
@@ -267,7 +264,6 @@ select{
     padding: 0em;
     font-size: 1.1em;
     margin:0em;
-    
 
 
 }
@@ -288,7 +284,6 @@ font-size: 1.2em;
 
 }
     
-
 }
 
 @media screen and (max-width: 500px){
@@ -315,13 +310,10 @@ header{
 #form{
 
     width: 75%;
-
-
 }
 
 footer{
 text-align: center;
-
 }
 
 }
