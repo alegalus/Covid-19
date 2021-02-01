@@ -241,9 +241,7 @@ header{
 #form{
 
     width: 60%;
-    padding: 2em 3em;
-       
-            
+    padding: 2em 3em;         
 } 
 label{
     
@@ -256,7 +254,6 @@ input {
     padding: 0em;
     font-size: 1.1em;
     margin: 0em;
-
 }
 
 select{
@@ -264,8 +261,6 @@ select{
     padding: 0em;
     font-size: 1.1em;
     margin:0em;
-
-
 }
 
 #cargarEstadistica{
