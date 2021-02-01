@@ -73,7 +73,6 @@ header{
     padding: 1.6em;
     margin-top: 1.2em;
     margin-bottom: 1.2em;
-
     box-shadow: 5px 2px 8px #888888;
     
 
@@ -170,4 +169,159 @@ footer{
     margin-bottom: 0.5em;
 }
 
-.social a:hover {transform: scale(1.1,1.1); color: #dd3308;}
+.social a:hover {transform: scale(1.1,1.1); color: rgb(34, 87, 122);}
+
+/*--Media Query--*/
+
+@media screen and (min-width:1024px){
+    header{
+        height: 7em;
+        font-size: 1.6em;
+    
+    }
+    
+    #form{
+    
+        width: 60%;
+        padding: 2em 3em;
+       
+        
+        
+                
+    } 
+    label{
+        
+        font-size: 1.2em;
+        margin: 0em ;
+    
+    }
+    input {
+        
+        padding: 0em;
+        font-size: 1.1em;
+        margin: 0em;
+    
+    }
+    
+    select{
+        
+        padding: 0em;
+        font-size: 1.1em;
+        margin:0em;
+        
+    
+    
+    }
+    
+    #cargarEstadistica{
+    
+        font-size: 1.4em;
+        padding: 0em;
+    
+    } 
+    li{
+    font-size: 1.2em;
+    
+    }
+    
+    footer{
+    font-size: 1.4em;
+    
+    }
+        
+    
+    }
+
+@media screen and (min-width: 760px) and (max-width: 780px){
+header{
+    height: 7em;
+
+}
+
+#form{
+
+    width: 60%;
+    padding: 2em 3em;
+   
+    
+    
+            
+} 
+label{
+    
+    font-size: 1.2em;
+    margin: 0em ;
+
+}
+input {
+    
+    padding: 0em;
+    font-size: 1.1em;
+    margin: 0em;
+
+}
+
+select{
+    
+    padding: 0em;
+    font-size: 1.1em;
+    margin:0em;
+    
+
+
+}
+
+#cargarEstadistica{
+
+    font-size: 1.4em;
+    padding: 0em;
+
+} 
+li{
+font-size: 1.2em;
+
+}
+
+footer{
+font-size: 1.2em;
+
+}
+    
+
+}
+
+@media screen and (max-width: 500px){
+header{
+    height: 6em;
+}
+#form{
+
+    width: 75%;
+        
+}  
+
+footer{
+
+    text-align: center;
+    padding: 1em 1em;
+}
+}
+
+@media screen and (max-width: 360px){
+header{
+    height: 6em;
+}
+#form{
+
+    width: 75%;
+
+
+}
+
+footer{
+text-align: center;
+
+}
+
+}
+
