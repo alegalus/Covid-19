@@ -294,7 +294,11 @@ header{
 
     width: 75%;
         
-}  
+} 
+#inputFecha{
+    width: 100%;
+
+} 
 
 footer{
 
@@ -311,7 +315,10 @@ header{
 
     width: 75%;
 }
+#inputFecha{
+    width: 100%;
 
+}
 footer{
 text-align: center;
 }
