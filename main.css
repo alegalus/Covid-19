@@ -6,8 +6,8 @@
 }
 
 /* Remove default padding */
-ul[class],
-ol li[class] {
+    ul[class],
+    ol li[class] {
     padding: 0;
     list-style: none;
     margin: 0;
