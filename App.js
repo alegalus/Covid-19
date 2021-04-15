@@ -3,6 +3,9 @@ window.onload = iniciar
 function iniciar(){
     let button = document.getElementById("cargarEstadistica")
     button.addEventListener("click", clickBoton)
+   
+
+
 
 }
 
@@ -12,7 +15,10 @@ async function cargarUrl(url){
 
 }
 
+
 async function clickBoton(){
+    let spinner = document.getElementById("donutSpinner")
+    spinner.style.visibility = "visible"
 
     let pais = document.getElementById("selectPais").value
     let fecha = document.getElementById("inputFecha").value
@@ -30,7 +36,15 @@ async function clickBoton(){
     document.getElementById("today_open_cases").innerHTML = estadisticas.today_open_cases.toLocaleString()
     document.getElementById("today_recovered").innerHTML = estadisticas.today_recovered.toLocaleString()
     
+    setTimeout(() => {
+        spinner.style.visibility = "hidden"
+    }, 0);
     
     
 
 }
+
+
+
+
+

@@ -2,12 +2,16 @@
 /* Box sizing rules */
 *::before,
 *::after {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 /* Remove default padding */
 ul[class],
-ol li[class] {padding: 0;list-style: none; margin: 0;}
+ol li[class] {
+    padding: 0;
+    list-style: none;
+    margin: 0;
+}
 
 /* Remove default margin */
 body,
@@ -21,50 +25,82 @@ figure,
 figcaption,
 blockquote,
 dl,
-dd {margin: 0;}
+dd {
+    margin: 0;
+}
 
 /* Set core body defaults */
 body {
-  min-height: 100vh;
-  scroll-behavior: smooth;
-  text-rendering: optimizeSpeed;
-  line-height: 1;
-  margin: 0;
-  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.2;
-  }
-  
+    min-height: 100vh;
+    scroll-behavior: smooth;
+    text-rendering: optimizeSpeed;
+    line-height: 1;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
 
 /* Make images easier to work with */
 
-img { max-width: 100%;}
+img {
+    max-width: 100%;
+}
 
 /*--CSS RESET END--*/
+/*--CARGA DE LA PAGINA--*/
+#donutSpinner {
+
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 50;
+    top: 0;
+    margin: auto;
+    border: 6px solid hsl(222 100% 95%);
+    border-left-color: rgb(56, 163, 165);
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    animation: donut-spin 1.2s linear infinite;
+    visibility: hidden;
+}
+
+@keyframes donut-spin {
+    to {
+        transform: rotate(1turn);
+    }
+}
+
+
+
 /*--All--*/
-#container{
+#container {
     display: grid;
     height: 100vh;
     grid-template-rows: auto 1fr auto;
     margin: auto;
 }
+
 /*--Header--*/
-header{
+header {
     display: flex;
     justify-content: center;
     align-items: center;
     color: white;
     height: 5em;
-    background-color:rgb(56, 163, 165);
-    
+    background-color: rgb(56, 163, 165);
+
 
 
 
 }
+
 /*--Main--*/
-#form{
-    display: grid; 
+#form {
+    display: grid;
     width: 20%;
     margin: auto;
     border: none;
@@ -74,16 +110,17 @@ header{
     margin-top: 1.2em;
     margin-bottom: 1.2em;
     box-shadow: 5px 2px 8px #888888;
-    
+
 
 
 }
 
-label{
-    color:rgb(4, 100, 138);
+label {
+    color: rgb(4, 100, 138);
     font-size: 1.1em;
 
 }
+
 input {
     border: none;
     border-bottom: 1px solid black;
@@ -93,7 +130,7 @@ input {
 
 }
 
-select{
+select {
     border: none;
     border-bottom: 1px solid black;
     margin-bottom: 0.5em;
@@ -104,35 +141,38 @@ select{
 
 }
 
-#cargarEstadistica{
+#cargarEstadistica {
 
     padding: 0.5em;
     border-radius: 5px;
     border: 1px solid grey;
     color: white;
-    background: #BBD2C5;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #536976, #BBD2C5);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #536976, #BBD2C5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #BBD2C5;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #536976, #BBD2C5);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #536976, #BBD2C5);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     box-shadow: 5px 2px 8px #888888;
-    transition: all 1s;
+    transition: all 1.5s;
 
 }
 
-#cargarEstadistica:hover{
+#cargarEstadistica:hover {
 
-    transform: scale(1.05,1.05);
-
-
-}
- 
-.num{
-
-font-weight: 900;
+    transform: scale(1.05, 1.05);
 
 
 }
 
-li{
+.num {
+
+    font-weight: 900;
+
+
+}
+
+li {
     list-style: none;
     padding: 0.3em;
     border: none;
@@ -143,180 +183,193 @@ li{
 }
 
 /*--Footer--*/
-footer{
+footer {
 
     display: flex;
     justify-content: center;
     align-items: center;
     flex-flow: column;
-    margin-top:1em;
+    margin-top: 1em;
     padding-top: 1em;
-    background-color:rgb(87, 204, 153);
+    background-color: rgb(87, 204, 153);
     color: white;
     font-weight: 600;
 }
 
-.social a { 
+.social a {
     margin-top: 1em;
     font-size: 1.8em;
     text-decoration: none;
     color: #ffffff;
     padding: 0em 0.2em;
-    display: inline-flex; 
+    display: inline-flex;
     transition: all 0.8s;
     justify-content: center;
-    margin-left: 0.3em; 
+    margin-left: 0.3em;
     margin-bottom: 0.5em;
-    
+
 }
 
-.social a:hover {transform: scale(1.1,1.1); color: rgb(34, 87, 122);}
+.social a:hover {
+    transform: scale(1.1, 1.1);
+    color: rgb(34, 87, 122);
+}
 
 /*--Media Query--*/
 
-@media screen and (min-width:1024px)and (max-width: 1200px){
-    header{
+@media screen and (min-width:1024px)and (max-width: 1200px) {
+    header {
         height: 7em;
         font-size: 1.6em;
-    
+
     }
-    
-    #form{
-    
+
+    #form {
+
         width: 60%;
         padding: 2em 3em;
-       
 
-                
-    } 
-    label{
-        
-        font-size: 1.2em;
-        margin: 0em ;
-    
+
+
     }
+
+    label {
+
+        font-size: 1.2em;
+        margin: 0em;
+
+    }
+
     input {
-        
+
         padding: 0em;
         font-size: 1.1em;
         margin: 0em;
-    
+
     }
-    
-    select{
-        
+
+    select {
+
         padding: 0em;
         font-size: 1.1em;
-        margin:0em;
-        
-    
-    
+        margin: 0em;
+
+
+
     }
-    
-    #cargarEstadistica{
-    
+
+    #cargarEstadistica {
+
         font-size: 1.4em;
         padding: 0em;
-    
-    } 
-    li{
-    font-size: 1.2em;
-    
-    }
-    
-    footer{
-    font-size: 1.4em;
-    
-    }
-        
-    
+
     }
 
-@media screen and (min-width: 760px) and (max-width: 780px){
-header{
-    height: 7em;
+    li {
+        font-size: 1.2em;
+
+    }
+
+    footer {
+        font-size: 1.4em;
+
+    }
+
 
 }
 
-#form{
+@media screen and (min-width: 760px) and (max-width: 780px) {
+    header {
+        height: 7em;
 
-    width: 60%;
-    padding: 2em 3em;         
-} 
-label{
-    
-    font-size: 1.2em;
-    margin: 0em ;
+    }
 
-}
-input {
-    
-    padding: 0em;
-    font-size: 1.1em;
-    margin: 0em;
-}
+    #form {
 
-select{
-    
-    padding: 0em;
-    font-size: 1.1em;
-    margin:0em;
-}
+        width: 60%;
+        padding: 2em 3em;
+    }
 
-#cargarEstadistica{
+    label {
 
-    font-size: 1.4em;
-    padding: 0em;
+        font-size: 1.2em;
+        margin: 0em;
 
-} 
-li{
-font-size: 1.2em;
+    }
 
-}
+    input {
 
-footer{
-font-size: 1.2em;
+        padding: 0em;
+        font-size: 1.1em;
+        margin: 0em;
+    }
 
-}
-    
-}
+    select {
 
-@media screen and (max-width: 500px){
-header{
-    height: 6em;
-}
-#form{
+        padding: 0em;
+        font-size: 1.1em;
+        margin: 0em;
+    }
 
-    width: 75%;
-        
-} 
-#inputFecha{
-    width: 100%;
+    #cargarEstadistica {
 
-} 
+        font-size: 1.4em;
+        padding: 0em;
 
-footer{
+    }
 
-    text-align: center;
-    padding: 1em 1em;
-}
-}
+    li {
+        font-size: 1.2em;
 
-@media screen and (max-width: 360px){
-header{
-    height: 6em;
-}
-#form{
+    }
 
-    width: 75%;
-}
-#inputFecha{
-    width: 100%;
+    footer {
+        font-size: 1.2em;
 
-}
-footer{
-text-align: center;
-}
+    }
 
 }
 
+@media screen and (max-width: 500px) {
+    header {
+        height: 6em;
+    }
+
+    #form {
+
+        width: 75%;
+
+    }
+
+    #inputFecha {
+        width: 100%;
+
+    }
+
+    footer {
+
+        text-align: center;
+        padding: 1em 1em;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    header {
+        height: 6em;
+    }
+
+    #form {
+
+        width: 75%;
+    }
+
+    #inputFecha {
+        width: 100%;
+
+    }
+
+    footer {
+        text-align: center;
+    }
+
+}
