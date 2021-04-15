@@ -36,9 +36,9 @@ async function clickBoton(){
     document.getElementById("today_open_cases").innerHTML = estadisticas.today_open_cases.toLocaleString()
     document.getElementById("today_recovered").innerHTML = estadisticas.today_recovered.toLocaleString()
     
-    setTimeout(() => {
-        spinner.style.visibility = "hidden"
-    }, 0);
+    
+    spinner.style.visibility = "hidden"
+  
     
     
 
