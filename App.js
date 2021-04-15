@@ -18,7 +18,7 @@ async function cargarUrl(url){
 
 async function clickBoton(){
     let spinner = document.getElementById("donutSpinner")
-    spinner.style.visibility = "visible"
+    spinner.style.display = "block"
 
     let pais = document.getElementById("selectPais").value
     let fecha = document.getElementById("inputFecha").value
@@ -37,7 +37,7 @@ async function clickBoton(){
     document.getElementById("today_recovered").innerHTML = estadisticas.today_recovered.toLocaleString()
     
     
-    spinner.style.visibility = "hidden"
+    spinner.style.display = "none"
   
     
     
