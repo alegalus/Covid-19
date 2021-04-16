@@ -20,6 +20,9 @@ async function clickBoton(){
     let spinner = document.getElementById("donutSpinner")
     spinner.style.display = "block"
 
+    let modal1 = document.getElementById("modal")
+    modal1.style.display = "block"
+
     let pais = document.getElementById("selectPais").value
     let fecha = document.getElementById("inputFecha").value
     
@@ -38,6 +41,7 @@ async function clickBoton(){
     
     
     spinner.style.display = "none"
+    modal1.style.display = "none"
   
     
     
