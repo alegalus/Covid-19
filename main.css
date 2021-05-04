@@ -79,6 +79,7 @@ img {
     animation: donut-spin 1.2s linear infinite;
     display: none;
     z-index: 9000;
+    
 }
 
 @keyframes donut-spin {
@@ -155,7 +156,7 @@ select {
 }
 
 #cargarEstadistica {
-
+    cursor: pointer;
     padding: 0.5em;
     border-radius: 5px;
     border: 1px solid grey;
