@@ -130,6 +130,10 @@ input {
   padding: 0.5em;
 }
 
+input:focus {
+  outline: none;
+}
+
 select {
   border: none;
   border-bottom: 1px solid black;
@@ -137,6 +141,10 @@ select {
   border-radius: 5px;
   padding: 0.5em;
   background-color: rgb(238, 238, 238);
+}
+
+select:focus {
+  outline: none;
 }
 
 #cargarEstadistica {
